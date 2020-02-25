@@ -9,8 +9,28 @@
     <title>AVS</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Krona+One|Montserrat|Quicksand|Raleway&display=swap" rel="stylesheet">
+    <script desciption="scrolling">
+        window.onscroll = function () {
+            let header = document.getElementsByTagName("header")[0];
+            let logo = document.getElementById("headLogo");
+            let links = document.getElementsByClassName("headLink");
+            if (window.pageYOffset > 0) {
+                header.style.backgroundColor = "white";
+                logo.style.color = "#4D8BC5";
+                for (let i = 0; i < 3; ++i) {
+                    links[i].style.color = "#4D8BC5";
+                }
+            } else {
+                header.style.backgroundColor = "transparent";
+                logo.style.color = "white";
+                for (let i = 0; i < 3; ++i) {
+                    links[i].style.color = "white";
+                }
+            }
+        };
+    </script>
 </head>
-<header>
+<header id="1" >
     <div id="head1080">
         <div id="headLogo">
             <h3>AVS <span>inc.</span></h3>
@@ -24,7 +44,16 @@
     </div>
 </header>
 <body>
+    <div id="pageOne">
+        <div id="pageOne1080">
+            <div id="pageOneText">
+                <h3>BEST IN <span>IT</span> SINCE 2018</h3>
+            </div>
+            <div id="pageOneImg">
 
+            </div>
+        </div>
+    </div>
 
     <script src="js/main.js"></script>
 </body>

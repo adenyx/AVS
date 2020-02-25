@@ -3,4 +3,7 @@ window.onload = function () {
     for (let i = 0; i < links.length; i++) {
         links[i].style.transition = "all 0.5s ease-in-out";
     }
+    let header = document.getElementsByTagName("header")[0];
+    header.style.transition = "background-color 0.25s ease-in-out, color 0.25s ease-in-out";
 };
+
