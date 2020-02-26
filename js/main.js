@@ -4,6 +4,6 @@ window.onload = function () {
         links[i].style.transition = "all 0.5s ease-in-out";
     }
     let header = document.getElementsByTagName("header")[0];
-    header.style.transition = "background-color 0.25s ease-in-out, color 0.25s ease-in-out";
+    header.style.transition = "background-color 0.15s ease-in-out, color 0.15s ease-in-out";
 };
 
